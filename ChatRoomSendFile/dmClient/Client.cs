@@ -11,7 +11,7 @@ namespace dmClient
             InitializeComponent();
         }
 
-        IPEndPoint ipe = new IPEndPoint(IPAddress.Parse("172.30.172.121"), 18000); // dia chi server;
+        IPEndPoint ipe = new IPEndPoint(IPAddress.Parse("192.168.83.198"), 18000); // dia chi server;
         Socket client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
         void send(string s) // gui tin nhan

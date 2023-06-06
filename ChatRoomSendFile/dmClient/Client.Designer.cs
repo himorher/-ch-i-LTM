@@ -46,6 +46,7 @@
             listView1.Size = new Size(1460, 471);
             listView1.TabIndex = 0;
             listView1.UseCompatibleStateImageBehavior = false;
+            listView1.View = View.List;
             // 
             // button4
             // 
@@ -126,7 +127,7 @@
             textBox1.Size = new Size(710, 27);
             textBox1.TabIndex = 9;
             // 
-            // Form1
+            // Client
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -140,7 +141,7 @@
             Controls.Add(label1);
             Controls.Add(textBox1);
             Controls.Add(listView1);
-            Name = "Form1";
+            Name = "Client";
             Text = "Client";
             ResumeLayout(false);
             PerformLayout();

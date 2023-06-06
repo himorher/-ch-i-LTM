@@ -42,7 +42,7 @@ namespace dmServer
                         listClient.Add(client);
                         string str = "Client mới kết nối từ: " + client.RemoteEndPoint.ToString() + "\n";
                         listView1.Items.Add(new ListViewItem(str));
-                        Thread recieve_thr = new Thread(recieve);
+                        Thread recieve_thr = new Thread(receive);
                         recieve_thr.Start(client);
                     }
                 }
@@ -55,7 +55,7 @@ namespace dmServer
             });
             listen.Start();
         }
-        void recieve(object obj) // hàm nhận message cùng với đó là gửi message đó cho các client còn lại.
+        void receive(object obj) // hàm nhận message cùng với đó là gửi message đó cho các client còn lại.
         {
             // Socket cli = obj as Socket;
             Socket cli = (Socket)obj;
@@ -83,21 +83,21 @@ namespace dmServer
         {
             this.Close();
         }
-        //public static void doChat(Socket clientSocket, string n) //nhan file va xu ly
+        public static void doChat(Socket clientSocket) //nhan file va xu ly
 
-        //{
-        //    Console.WriteLine("getting file....");
-        //    byte[] clientData = new byte[1024 * 5000];
-        //    int receivedBytesLen = clientSocket.Receive(clientData);
-        //    int fileNameLen = BitConverter.ToInt32(clientData, 0);
-        //    string fileName = Encoding.ASCII.GetString(clientData, 4, fileNameLen);
-        //    BinaryWriter bWrite = new BinaryWriter(File.Open(fileName + n, FileMode.Create));
-        //    bWrite.Write(clientData, 4 + fileNameLen, receivedBytesLen - 4 - fileNameLen);
-        //    bWrite.Close();
-        //    clientSocket.Close();
+        {
+            Console.WriteLine("getting file....");
+            byte[] clientData = new byte[1024 * 5000];
+            int receivedBytesLen = clientSocket.Receive(clientData);
+            int fileNameLen = BitConverter.ToInt32(clientData, 0);
+            string fileName = Encoding.ASCII.GetString(clientData, 4, fileNameLen);
+            BinaryWriter bWrite = new BinaryWriter(File.Open(fileName, FileMode.Create));
+            bWrite.Write(clientData, 4 + fileNameLen, receivedBytesLen - 4 - fileNameLen);
+            bWrite.Close();
+            clientSocket.Close();
 
-        //    //[0]filenamelen[4]filenamebyte[*]filedata   
+            //[0]filenamelen[4]filenamebyte[*]filedata   
 
-        //}
+        }
     }
 }
