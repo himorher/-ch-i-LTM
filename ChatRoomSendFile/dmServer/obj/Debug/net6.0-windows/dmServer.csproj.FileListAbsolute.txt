@@ -1,0 +1,17 @@
+D:\dochoiLTM\ChatRoomSendFile\dmServer\bin\Debug\net6.0-windows\dmServer.exe
+D:\dochoiLTM\ChatRoomSendFile\dmServer\bin\Debug\net6.0-windows\dmServer.deps.json
+D:\dochoiLTM\ChatRoomSendFile\dmServer\bin\Debug\net6.0-windows\dmServer.runtimeconfig.json
+D:\dochoiLTM\ChatRoomSendFile\dmServer\bin\Debug\net6.0-windows\dmServer.dll
+D:\dochoiLTM\ChatRoomSendFile\dmServer\bin\Debug\net6.0-windows\dmServer.pdb
+D:\dochoiLTM\ChatRoomSendFile\dmServer\obj\Debug\net6.0-windows\dmServer.csproj.AssemblyReference.cache
+D:\dochoiLTM\ChatRoomSendFile\dmServer\obj\Debug\net6.0-windows\dmServer.csproj.GenerateResource.cache
+D:\dochoiLTM\ChatRoomSendFile\dmServer\obj\Debug\net6.0-windows\dmServer.GeneratedMSBuildEditorConfig.editorconfig
+D:\dochoiLTM\ChatRoomSendFile\dmServer\obj\Debug\net6.0-windows\dmServer.AssemblyInfoInputs.cache
+D:\dochoiLTM\ChatRoomSendFile\dmServer\obj\Debug\net6.0-windows\dmServer.AssemblyInfo.cs
+D:\dochoiLTM\ChatRoomSendFile\dmServer\obj\Debug\net6.0-windows\dmServer.csproj.CoreCompileInputs.cache
+D:\dochoiLTM\ChatRoomSendFile\dmServer\obj\Debug\net6.0-windows\dmServer.dll
+D:\dochoiLTM\ChatRoomSendFile\dmServer\obj\Debug\net6.0-windows\refint\dmServer.dll
+D:\dochoiLTM\ChatRoomSendFile\dmServer\obj\Debug\net6.0-windows\dmServer.pdb
+D:\dochoiLTM\ChatRoomSendFile\dmServer\obj\Debug\net6.0-windows\dmServer.genruntimeconfig.cache
+D:\dochoiLTM\ChatRoomSendFile\dmServer\obj\Debug\net6.0-windows\ref\dmServer.dll
+D:\dochoiLTM\ChatRoomSendFile\dmServer\obj\Debug\net6.0-windows\dmServer.Server_again.resources
